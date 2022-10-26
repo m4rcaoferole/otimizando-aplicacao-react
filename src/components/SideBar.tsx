@@ -1,11 +1,8 @@
+import { GenreResponseProps } from "../types/types";
 import { Button } from "./Button";
 
 interface SideBarProps {
-  genres: Array<{
-    id: number;
-    name: "action" | "comedy" | "documentary" | "drama" | "horror" | "family";
-    title: string;
-  }>;
+  genres: GenreResponseProps[];
   selectedGenreId: number;
   buttonClickCallback: (args: any) => void;
 }
